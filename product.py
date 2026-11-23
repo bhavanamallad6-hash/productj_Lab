@@ -1,14 +1,10 @@
-from product import product_details
-
-def test_product_details():
-    result = product_details(101, "Laptop", 2, 50000)
-
-    expected = (
-        "Product ID: 101\n"
-        "Name: Laptop\n"
-        "Quantity: 2\n"
-        "Price: 50000"
+def product_details(product_id, name, quantity, price):
+    return (
+        f"Product ID: {product_id}\n"
+        f"Name: {name}\n"
+        f"Quantity: {quantity}\n"
+        f"Price: {price}"
     )
 
-    assert result == expected
-    print("Product details test passed successfully!")
+
+print(product_details(101, "Laptop", 2, 50000))
